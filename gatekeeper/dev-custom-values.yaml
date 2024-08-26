@@ -1,6 +1,1 @@
-enableExternalData: true
-controllerManager:
-  dnsPolicy: ClusterFirst
-audit:
-  dnsPolicy: ClusterFirst
-validatingWebhookTimeoutSeconds: 30
+replicas: 1
