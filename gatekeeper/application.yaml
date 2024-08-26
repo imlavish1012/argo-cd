@@ -12,7 +12,7 @@ spec:
     helm:
       releaseName: gatekeeper
       valueFiles:
-        - $gatekeeper/dev-custom-values.yaml
+        - gatekeeper/dev-custom-values.yaml
     repoURL: 'https://github.com/imlavish1012/argo-cd.git'
     ref: gatekeeper
     targetRevision: main
@@ -25,29 +25,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
-
-
-
-# - name: gatekeeper
-#   namespace: argocd
-#   project: default
-#   sources:
-#   - chart: gatekeeper
-#     repoURL: 'https://open-policy-agent.github.io/gatekeeper/charts'
-#     targetRevision: 3.16.3
-#     helm:
-#       releaseName: gatekeeper
-#       valueFiles:
-#         - $gatekeeper/k8s/helm/gatekeeper/dev-custom-values.yaml
-#   - repoURL: 'https://github.com/scribe-security/scribe2.git'
-#     ref: gatekeeper
-#     targetRevision: main
-#   destination:
-#     namespace: gatekeeper
-#     server: 'https://kubernetes.default.svc'
-#   syncPolicy:
-#     automated:
-#       prune: false
-#       selfHeal: true
-#     syncOptions:
-#       - CreateNamespace=true
