@@ -13,7 +13,7 @@ spec:
         valueFiles:
         - $values/nginx/dev-custom-values.yaml
     # Values from Git
-    - repoURL: 'ttps://github.com/imlavish1012/argo-cd'
+    - repoURL: 'https://github.com/imlavish1012/argo-cd'
       targetRevision: HEAD
       ref: values
   destination:
