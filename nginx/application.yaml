@@ -9,11 +9,13 @@ spec:
     chart: nginx
     repoURL: https://charts.bitnami.com/bitnami
     targetRevision: 18.1.11
-    path: nginx
     helm:
       releaseName: nginx
       valueFiles:
-        - dev-custom-values.yaml
+        - $values/nginx/dev-custom-values.yaml
+    repoURL: https://github.com/imlavish1012/argo-cd.git
+    targetRevision: HEAD
+    ref: values
   destination:
     server: "https://kubernetes.default.svc"
     namespace: nginx
