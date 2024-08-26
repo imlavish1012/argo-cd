@@ -13,9 +13,6 @@ spec:
       releaseName: gatekeeper
       valueFiles:
         - $gatekeeper/dev-custom-values.yaml
-  - repoURL: 'https://github.com/imlavish1012/argo-cd.git'
-    ref: gatekeeper
-    targetRevision: main
   destination:
     server: "https://kubernetes.default.svc"
     namespace: gatekeeper
