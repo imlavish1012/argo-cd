@@ -12,7 +12,7 @@ spec:
    path: helm-guestbook
    helm:
       valueFiles:
-        - helm-guestbook/values-production.yaml
+        - values-production.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: helm-guestbook
