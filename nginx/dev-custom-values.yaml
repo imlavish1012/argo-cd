@@ -3,3 +3,4 @@ image:
   repository: bitnami/nginx
   tag: latest
   digest: ""
+replicaCount: 2
